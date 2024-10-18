@@ -49,4 +49,11 @@ public class PlayerController : MonoBehaviour
     {
         return boxCollider.IsTouchingLayers(groundLayer);
     }
+
+    public void Die()
+    {
+        Debug.Log("Player has died!");
+
+        transform.position = new Vector3(0, 0, 0);
+    }
 }
